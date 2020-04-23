@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMACTGENE</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+    <header class="fixed-top navbar-custom">
+        <nav class="container navbar navbar-expand-md mt-2 py-2 py-xl-3">
+            <a class="logo-mobile mr-4 p-0" href="#">
+                <img src="images/logo/logo-mobile.svg">
+            </a>
+
+            <a class="logo mr-4 p-0" href="#">
+                <img src="images/logo/logo.svg">
+            </a>
+
+            <div class="mt-5 pt-4 w-100">
+                <ul class="navbar-btn navbar-nav mt-2">
+                    <li class="nav-item px-2">
+                        <div class="nav-link text-center">
+                            <div class="bag-shop">
+                                <a href="#">
+                                    <svg height="23px" viewBox="-42 0 478 478.40001" width="23px"
+                                        xmlns="http://www.w3.org/2000/svg" class="bag-svg">
+                                        <path
+                                            d="m368.582031 122.898438c-.4375-5.179688-4.800781-9.148438-10-9.097657h-76v-28.800781c0-46.945312-38.058593-85-85-85-46.945312 0-85 38.054688-85 85v28.800781h-76c-5.175781.019531-9.496093 3.949219-10 9.097657l-26.199219 301.203124c-1.191406 13.964844 3.527344 27.792969 13.015626 38.117188 9.484374 10.320312 22.863281 16.191406 36.882812 16.179688h294.699219c14.019531.011718 27.398437-5.859376 36.882812-16.179688 9.488281-10.324219 14.210938-24.152344 13.019531-38.117188zm-236-37.898438c0-35.898438 29.101563-65 65-65 35.898438 0 65 29.101562 65 65v28.800781h-130zm234.5 363.699219c-5.65625 6.226562-13.691406 9.753906-22.101562 9.699219h-294.800781c-8.410157.003906-16.433594-3.523438-22.121094-9.71875-5.683594-6.199219-8.507813-14.5-7.777344-22.878907l25.398438-292h66.902343v62.398438c-16.082031 4.949219-26.125 20.914062-23.621093 37.554687 2.5 16.636719 16.796874 28.941406 33.621093 28.941406s31.117188-12.304687 33.621094-28.941406c2.5-16.640625-7.542969-32.605468-23.621094-37.554687v-62.5h130v62.5c-16.082031 4.949219-26.125 20.914062-23.621093 37.554687 2.5 16.636719 16.796874 28.941406 33.621093 28.941406s31.117188-12.304687 33.621094-28.941406c2.5-16.640625-7.542969-32.605468-23.621094-37.554687v-62.5h66.800781l25.398438 292c.820312 8.414062-1.980469 16.777343-7.699219 23zm-246-233.898438c.996094.132813 2.003907.132813 3 0 7.394531.796875 12.878907 7.242188 12.480469 14.667969-.402344 7.429688-6.542969 13.25-13.980469 13.25-7.441406 0-13.582031-5.820312-13.980469-13.25-.398437-7.425781 5.082032-13.871094 12.480469-14.667969zm150 0c.996094.132813 2.003907.132813 3 0 7.394531.796875 12.878907 7.242188 12.480469 14.667969-.402344 7.429688-6.542969 13.25-13.980469 13.25-7.441406 0-13.582031-5.820312-13.980469-13.25-.398437-7.425781 5.082032-13.871094 12.480469-14.667969zm0 0" />
+                                    </svg>
+                                </a>
+                                <a data-hover="SHOP" class="text-slide shop" href="#">
+                                    SHOP
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item px-2 mt-2">
+                        <a href="#" class="login-mobile">
+                            <svg id="Capa_1" enable-background="new 0 0 20 20" height="23" viewBox="0 0 551.13 551.13"
+                                width="23" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m499.462 0h-378.902c-9.52 0-17.223 7.703-17.223 17.223v51.668h34.446v-34.445h344.456v482.239h-344.456v-34.446h-34.446v51.668c0 9.52 7.703 17.223 17.223 17.223h378.902c9.52 0 17.223-7.703 17.223-17.223v-516.684c0-9.52-7.704-17.223-17.223-17.223z" />
+                                <path
+                                    d="m204.588 366.725 24.354 24.354 115.514-115.514-115.514-115.514-24.354 24.354 73.937 73.937h-244.079v34.446h244.08z" />
+                            </svg>
+                        </a>
+                        <div class="items">
+                            <button href="#" class="btn-sign-in">
+                                <span data-hover="SIGN IN" class="btn px-4 text-white">SIGN IN</span>    
+                            </button>
+                    </li>
+
+                    <li class="nav-item px-3 mt-2 icon-down">
+                        <a href="#" class="register-mobile">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M255.501,0.499c-81.448,0-147.711,66.264-147.711,147.711c0,50.449,25.429,95.065,64.137,121.724
+                                            c-36.139,12.471-69.263,33.071-97.091,60.899C26.577,379.093,0,443.254,0,511.501h39.922
+                                            c0-118.871,96.708-215.579,215.579-215.579c81.448,0,147.711-66.264,147.711-147.712S336.949,0.499,255.501,0.499z M255.501,256
+                                            c-59.435,0-107.789-48.354-107.789-107.789S196.066,40.421,255.501,40.421S363.29,88.775,363.29,148.211S314.936,256,255.501,256z
+                                            " />
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <polygon
+                                            points="428.164,387.743 428.164,303.906 388.242,303.906 388.242,387.743 304.405,387.743 304.405,427.665 
+                                            388.242,427.665 388.242,511.501 428.164,511.501 428.164,427.665 512,427.665 512,387.743 		" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                        <div class="items">
+                            <button class="btn-register">
+                                <span data-hover="REGISTER A KIT" class="btn px-4 text-white">REGISTER A KIT</span>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <input id="navbar" type='checkbox'>
+                        <label for="navbar">
+                            <div class='menu'>
+                                <span class='hamburger'></span>
+                            </div>
+                        </label>
+
+                        <ul class="items-menu">
+                            <li class="nav-item">
+                                <a class="nav-link py-0 text-slide" data-hover="HOW IT WORKS" href="#">
+                                    HOW IT WORKS
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link py-0 text-slide" data-hover="GET STARTED" href="#">
+                                    GET STARTED
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle py-0 text-slide" id="navbarDropdown"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    data-hover="OUR SERVICES" href="#">
+                                    OUR SERVICES
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">- SINCEFIC CANNABIS BACKGROUND</a>
+                                    <a class="dropdown-item" href="#">- TIPS</a>
+                                    <a class="dropdown-item" href="#">- FAQ</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link py-0  text-slide" data-hover="REPORTS" href="#">          
+                                    REPORTS
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link py-0 text-slide" data-hover="ABOUT US" href="#">
+                                    ABOUT US
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link py-0 text-slide" data-hover="CANNABIS DOSAGE" href="#">         
+                                    CANNABIS DOSAGE
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link py-0 text-slide" data-hover="CONTACT US" href="#contact-us">
+                                    CONTACT US
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav navigation d-flex justify-content-end">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link pl-0 py-0 text-slide" data-hover="HOW IT WORKS" href="#">
+                            HOW IT WORKS
+                        </a>
+                    </li>
+
+                    <li class="nav-item mx-3">
+                        <a class="nav-link pl-0 py-0 text-slide" data-hover="GET STARTED" href="#">  
+                            GET STARTED
+                        </a>
+                    </li>
+
+                    <li class="nav-item mx-3">
+                        <a class="nav-link pl-0 py-0 text-slide" data-hover="OUR SERVICES" href="#">      
+                            OUR SERVICES
+                        </a>
+                    </li>
+
+                    <li class="nav-item mx-3">
+                        <a class="nav-link pl-0 py-0 text-slide" data-hover="REPORTS" href="#">        
+                            REPORTS
+                        </a>
+                    </li>
+
+                    <li class="nav-item mx-3">
+                        <a class="nav-link pl-0 py-0 text-slide" data-hover="ABOUT US" href="#">   
+                            ABOUT US
+                        </a>
+                    </li>
+
+                    <li class="nav-item mx-3">
+                        <a class="nav-link pl-0 py-0 text-slide" data-hover="CANNABIS DOSAGE" href="#">        
+                            CANNABIS DOSAGE
+                        </a>
+                    </li>
+
+                    <li class="nav-item mx-3">
+                        <a class="nav-link pl-0 py-0 text-slide" data-hover="CONTACT US" href="#contact-us">          
+                            CONTACT US
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="row no-gutters animated fadeInLeft mt-65">
+        <div id="content">
+            <div class="container">
+                <img src="images/bg/sots.png" alt="">
+                <div class="first-block-text mt-5 d-flex flex-column
+                                justify-content-center">
+                    <h1 class="font-weight-bold">Lorem ipsum dolor sit amet</h1>
+                    <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.
+                    </p>
+                    <div class="items">
+                        <button class="btn-buy py-2">
+                            <span data-hover="BUY NOW" class="btn px-4 text-white">BUY NOW</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-100 section-2 animated fadeInRight">
+        <div class="row no-gutters container mx-auto py-5">
+            <div class="col-md-12 col-xl-3 basic-card rounded mb-3 mb-sm-0 bg-white mr-auto mx-auto pb-3">
+                <h4 class="font-weight-bold text-white py-4
+                                text-center m-0">BASIC</h4>
+                <div class="product bg-white text-center pt-4 px-3">
+                    <div>
+                        <img src="images/block-2/product.jpg" alt="">
+
+                        <h5 class="font-weight-bold text-left">Ancestry + Traits Service</h5>
+                        <h4 class="font-weight-bold text-left">$99</h4>
+                        <ul class="pl-4 price-list text-left">
+                            <li>1500+ Geographic regions</li>
+                            <li>Automatic Family Tree Builder</li>
+                            <li>30+ Trait reports</li>
+                            <li>DNA Relative Finder</li>
+                        </ul>
+                        <p class="text-left"><a class="learn-more" href="#">Learn more</a></p>
+
+                        <div class="items text-center text-md-left">
+                            <button class="btn-buy py-2">
+                                <span data-hover="BUY NOW" class="btn px-4 text-white">BUY
+                                    NOW</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-xl-8 video my-auto text-center ml-2">
+                <h1 class="text-on-video text-white font-weight-bold">
+                    Watch now our product video demo
+                </h1>
+                <div id="play">
+                    <button>
+                        <img src="images/buttons/btn-play.png" alt="">
+                    </button>
+                </div>
+                <div class="d-flex embed-responsive embed-responsive-16by9">
+                    <video id="full-screen-poster" class="embed-responsive-item rounded" controls
+                        poster="images/block-2/man.jpg">
+                        <source src="video/When your crush tries to talk to you OK vine.mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-md-12 col-xl-4"></div>
+                <div class="col-md-12 col-xl-8 bg-white text-center">
+                    <p class="mt-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-3 bg-white pb-2 pt-5">
+        <h1 class="text-center font-weight-bold mb-5">
+            <span>
+                <span class="glitch" data-text="Why">Why</span> Strain Genie?
+            </span>
+        </h1>
+
+        <div class="row justify-content-lg-around small-container mx-sm-auto no-gutters mx-3">
+            <div class="mx-auto px-sm-4 strain bg-white pt-5 my-3">
+                <img src="images/block-3/dnk.png" alt="">
+                <div class="card-body">
+                    <p>Get personalized insights and important warnings about how
+                        you body may or may not respond to specific cannabioids, terpennes, strains, and products.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mx-auto px-4 strain bg-white pt-5 my-3">
+                <img src="images/block-3/Atom.png" alt="">
+                <div class="card-body">
+                    <p>Get personalized insights and important warnings about how
+                        you body may or may not respond to specific cannabioids, terpennes, strains, and
+                        products.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mx-auto px-4 strain bg-white pt-5 my-3">
+                <img src="images/block-3/microscope.png" alt="">
+                <div class="card-body">
+                    <p>Get personalized insights and important warnings about how
+                        you body may or may not respond to specific cannabioids, terpennes, strains, and
+                        products.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-lg-between mx-auto small-container no-gutters mb-5">
+            <h1 class="text-center mx-auto font-weight-bold mt-5">Your report also contains and strain recommendations
+                personalized for every part of your life</h1>
+
+            <div id="recomend" class="container row justify-content-lg-around">
+                <div class="row justify-content-lg-around">
+                    <div class="col-md-6 col-lg-3 svg-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="line" width="39" height="4" viewBox="0 0 39 4">
+                            <g>
+                                <g>
+                                    <path fill="#e91662" d="M.437.687h37.97v3H.436z" />
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="d-flex mt-5 justify-content-center">
+                            <div class="blue-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                    viewBox="0 0 33.41 33.19" width="101" height="107">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: none;
+                                                stroke: #324c5e;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                                stroke-width: 1.44px;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path class="cls-1"
+                                        d="M13.29,10.85a9.31,9.31,0,1,1-6.52,0V.72h6.52V10.85ZM5.43.72h9.21M2.16,14.6H17.9M25,16c2.57,3.75,5.08,8.41,7.48,12.35.83,1.35-1.08,4.17-2.71,4.17H14c-1.63,0-3.55-2.81-2.72-4.17C13.7,24.35,16.2,19.71,18.78,16V6.79H25V16ZM17.65,6.79h8.49M15.68,21.46H28.47" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 svg-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="line" width="39" height="4" viewBox="0 0 39 4">
+                            <g>
+                                <g>
+                                    <path fill="#e91662" d="M.437.687h37.97v3H.436z" />
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="mt-5">
+                            <div class="d-flex
+                                            justify-content-center">
+                                <div class="blue-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                        viewBox="0 0 35.93 37.76">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: none;
+                                                    stroke: #324c5e;
+                                                    stroke-linecap: round;
+                                                    stroke-linejoin: round;
+                                                    stroke-width: 1.44px;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <path class="cls-1"
+                                            d="M9.47,4.43,22,11.67l-4.38,7.6L5.08,12m16.06,1.14,11.39,6.58-2.65,4.59-11.4-6.58m13.45,3,3.28,1.89L33.76,25.2l-3.28-1.89M7.18.72l3.33,1.92L4,13.83.72,11.91,7.18.72Zm11.75,18a1.83,1.83,0,1,1-1.83,1.82,1.82,1.82,0,0,1,1.83-1.82Zm0,3.65V37m-.59-14.65L11.39,36.58m8.12-14.19,7,14.19" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 svg-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="line" width="39" height="4" viewBox="0 0 39 4">
+                            <g>
+                                <g>
+                                    <path fill="#e91662" d="M.437.687h37.97v3H.436z" />
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="mt-5">
+                            <div class="d-flex justify-content-center">
+                                <div class="blue-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                        viewBox="0 0 34.32 34.32">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: none;
+                                                    stroke: #324c5e;
+                                                    stroke-linecap: round;
+                                                    stroke-linejoin: round;
+                                                    stroke-width: 1.44px;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <path class="cls-1"
+                                            d="M17.16.72A16.44,16.44,0,1,1,.72,17.16,16.44,16.44,0,0,1,17.16.72ZM6.07,29.2c0-.46,0-.93,0-1.39A26.33,26.33,0,0,1,24.84,2.57M6.34,5.48A38.17,38.17,0,0,1,30.45,26.91M13.91,1c-.41,2.44,1.25,3.76,3.29,5.21C22,9.57,23.34,8,27.68,9.33,31,10.39,33.3,13,33.5,19M.8,15.54c4.23-5.81,7.76-4,9.7-2.4,8.26,6.78,2,10.83,9.41,20.23" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 svg-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="line" width="39" height="4" viewBox="0 0 39 4">
+                            <g>
+                                <g>
+                                    <path fill="#e91662" d="M.437.687h37.97v3H.436z" />
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="mt-5">
+                            <div class="d-flex
+                                            justify-content-center">
+                                <div class="blue-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                        viewBox="0 0 31.13 35.17">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: none;
+                                                    stroke: #324c5e;
+                                                    stroke-linecap: round;
+                                                    stroke-linejoin: round;
+                                                    stroke-width: 1.44px;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <path class="cls-1"
+                                            d="M18.66,16,25.79,2.15l3.74,1.91L23.38,16m3.31-.41,3.72-7.24-6.2-3.18M10.52,16,5.89,7.79.72,4.24l.83,6.32L4.7,16m1.12-7.6L1.81,11m5.8,5-3.4-5.71M17.29,16l.1-8.75L15,2.23,12.81,7.47V16m4.24-8.3-4.24.22m2.3-5,0-2.23m0,15.3L15,8.47m8,22.21,1.14-14.46H3.88L5,30.68M4,34.45H24V30.94H4v3.51Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-lg-around">
+                    <div class="col-md-6 col-lg-3 svg-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="line" width="39" height="4" viewBox="0 0 39 4">
+                            <g>
+                                <g>
+                                    <path fill="#e91662" d="M.437.687h37.97v3H.436z" />
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="mt-5">
+                            <div class="d-flex
+                                            justify-content-center">
+                                <div class="blue-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                        viewBox="0 0 33.2 28.64">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: none;
+                                                    stroke: #334d5e;
+                                                    stroke-linecap: round;
+                                                    stroke-linejoin: round;
+                                                    stroke-width: 1.44px;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <path class="cls-1"
+                                            d="M2.81,14.88C.39,11-.39,6.79,3.07,3.32A8.89,8.89,0,0,1,9.36.72c7.58,0,6.27,5.14,7.25,6.12,1-1-.33-6.12,7.25-6.12a8.87,8.87,0,0,1,6.28,2.6c8.46,8.46-8.4,21.15-12.61,24-1.14.78-.75.76-2-.07a62.58,62.58,0,0,1-7.92-6.52" />
+                                        <path class="cls-1"
+                                            d="M.72,17.52H7.63L9.44,6.75l2.09,10.77h2.94l1.81,5.1c1.64-4.39,2.73-7.18,4.13-11.9l2,6.8h6" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 svg-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="line" width="39" height="4" viewBox="0 0 39 4">
+                            <g>
+                                <g>
+                                    <path fill="#e91662" d="M.437.687h37.97v3H.436z" />
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="mt-5">
+                            <div class="d-flex
+                                            justify-content-center">
+                                <div class="blue-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                        viewBox="0 0 34.35 32.76">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: none;
+                                                    stroke: #324c5e;
+                                                    stroke-linecap: round;
+                                                    stroke-linejoin: round;
+                                                    stroke-width: 1.44px;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <path class="cls-1"
+                                            d="M22.52,8.38V30.87A1.19,1.19,0,0,1,21.34,32H1.9A1.19,1.19,0,0,1,.72,30.87V1.9A1.18,1.18,0,0,1,1.9.72h13m7.67,7.66H16a1.17,1.17,0,0,1-1.18-1.17V.72l7.67,7.66Zm4.16-3.73h4.2V26.44c0,4.34-4.2,4.34-4.2,0V4.65Zm6.93,11.57,0-8.14h-7m2.05,24V29.7M5.42,7h6.2m-6.2,5.86H17.81M5.42,16.31H17.81M5.42,19.73H17.81M5.42,23.15h6.2" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 svg-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="line" width="39" height="4" viewBox="0 0 39 4">
+                            <g>
+                                <g>
+                                    <path fill="#e91662" d="M.437.687h37.97v3H.436z" />
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="mt-5">
+                            <div class="d-flex
+                                            justify-content-center">
+                                <div class="blue-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                        viewBox="0 0 33.41 33.19" width="101" height="107">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: none;
+                                                    stroke: #324c5e;
+                                                    stroke-linecap: round;
+                                                    stroke-linejoin: round;
+                                                    stroke-width: 1.44px;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <path class="cls-1"
+                                            d="M13.29,10.85a9.31,9.31,0,1,1-6.52,0V.72h6.52V10.85ZM5.43.72h9.21M2.16,14.6H17.9M25,16c2.57,3.75,5.08,8.41,7.48,12.35.83,1.35-1.08,4.17-2.71,4.17H14c-1.63,0-3.55-2.81-2.72-4.17C13.7,24.35,16.2,19.71,18.78,16V6.79H25V16ZM17.65,6.79h8.49M15.68,21.46H28.47" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 svg-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="line" width="39" height="4" viewBox="0 0 39 4">
+                            <g>
+                                <g>
+                                    <path fill="#e91662" d="M.437.687h37.97v3H.436z" />
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="mt-5">
+                            <div class="d-flex
+                                            justify-content-center">
+                                <div class="blue-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                        viewBox="0 0 35.93 37.76">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: none;
+                                                    stroke: #324c5e;
+                                                    stroke-linecap: round;
+                                                    stroke-linejoin: round;
+                                                    stroke-width: 1.44px;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <path class="cls-1"
+                                            d="M9.47,4.43,22,11.67l-4.38,7.6L5.08,12m16.06,1.14,11.39,6.58-2.65,4.59-11.4-6.58m13.45,3,3.28,1.89L33.76,25.2l-3.28-1.89M7.18.72l3.33,1.92L4,13.83.72,11.91,7.18.72Zm11.75,18a1.83,1.83,0,1,1-1.83,1.82,1.82,1.82,0,0,1,1.83-1.82Zm0,3.65V37m-.59-14.65L11.39,36.58m8.12-14.19,7,14.19" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-lg-around">
+                    <div class="col-md-6 col-lg-3 svg-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="line" width="39" height="4" viewBox="0 0 39 4">
+                            <g>
+                                <g>
+                                    <path fill="#e91662" d="M.437.687h37.97v3H.436z" />
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="mt-5">
+                            <div class="d-flex
+                                            justify-content-center">
+                                <div class="blue-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                        viewBox="0 0 33.41 33.19" width="101" height="107">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: none;
+                                                    stroke: #324c5e;
+                                                    stroke-linecap: round;
+                                                    stroke-linejoin: round;
+                                                    stroke-width: 1.44px;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <path class="cls-1"
+                                            d="M13.29,10.85a9.31,9.31,0,1,1-6.52,0V.72h6.52V10.85ZM5.43.72h9.21M2.16,14.6H17.9M25,16c2.57,3.75,5.08,8.41,7.48,12.35.83,1.35-1.08,4.17-2.71,4.17H14c-1.63,0-3.55-2.81-2.72-4.17C13.7,24.35,16.2,19.71,18.78,16V6.79H25V16ZM17.65,6.79h8.49M15.68,21.46H28.47" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 svg-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="line" width="39" height="4" viewBox="0 0 39 4">
+                            <g>
+                                <g>
+                                    <path fill="#e91662" d="M.437.687h37.97v3H.436z" />
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="mt-5">
+                            <div class="d-flex
+                                            justify-content-center">
+                                <div class="blue-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                        viewBox="0 0 35.93 37.76">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: none;
+                                                    stroke: #324c5e;
+                                                    stroke-linecap: round;
+                                                    stroke-linejoin: round;
+                                                    stroke-width: 1.44px;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <path class="cls-1"
+                                            d="M9.47,4.43,22,11.67l-4.38,7.6L5.08,12m16.06,1.14,11.39,6.58-2.65,4.59-11.4-6.58m13.45,3,3.28,1.89L33.76,25.2l-3.28-1.89M7.18.72l3.33,1.92L4,13.83.72,11.91,7.18.72Zm11.75,18a1.83,1.83,0,1,1-1.83,1.82,1.82,1.82,0,0,1,1.83-1.82Zm0,3.65V37m-.59-14.65L11.39,36.58m8.12-14.19,7,14.19" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 svg-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="line" width="39" height="4" viewBox="0 0 39 4">
+                            <g>
+                                <g>
+                                    <path fill="#e91662" d="M.437.687h37.97v3H.436z" />
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="mt-5">
+                            <div class="d-flex
+                                            justify-content-center">
+                                <div class="blue-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                        viewBox="0 0 34.32 34.32">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: none;
+                                                    stroke: #324c5e;
+                                                    stroke-linecap: round;
+                                                    stroke-linejoin: round;
+                                                    stroke-width: 1.44px;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <path class="cls-1"
+                                            d="M17.16.72A16.44,16.44,0,1,1,.72,17.16,16.44,16.44,0,0,1,17.16.72ZM6.07,29.2c0-.46,0-.93,0-1.39A26.33,26.33,0,0,1,24.84,2.57M6.34,5.48A38.17,38.17,0,0,1,30.45,26.91M13.91,1c-.41,2.44,1.25,3.76,3.29,5.21C22,9.57,23.34,8,27.68,9.33,31,10.39,33.3,13,33.5,19M.8,15.54c4.23-5.81,7.76-4,9.7-2.4,8.26,6.78,2,10.83,9.41,20.23" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 svg-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="line" width="39" height="4" viewBox="0 0 39 4">
+                            <g>
+                                <g>
+                                    <path fill="#e91662" d="M.437.687h37.97v3H.436z" />
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="mt-5">
+                            <div class="d-flex justify-content-center">
+                                <div class="blue-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                        viewBox="0 0 31.13 35.17">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: none;
+                                                    stroke: #324c5e;
+                                                    stroke-linecap: round;
+                                                    stroke-linejoin: round;
+                                                    stroke-width: 1.44px;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <path class="cls-1"
+                                            d="M18.66,16,25.79,2.15l3.74,1.91L23.38,16m3.31-.41,3.72-7.24-6.2-3.18M10.52,16,5.89,7.79.72,4.24l.83,6.32L4.7,16m1.12-7.6L1.81,11m5.8,5-3.4-5.71M17.29,16l.1-8.75L15,2.23,12.81,7.47V16m4.24-8.3-4.24.22m2.3-5,0-2.23m0,15.3L15,8.47m8,22.21,1.14-14.46H3.88L5,30.68M4,34.45H24V30.94H4v3.51Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="contact-form bg-white" id="contact-us">
+        <div class="contact-container mx-sm-auto mx-3">
+            <h1 class="text-center font-weight-bold">
+                <span>
+                    Do you have any <br><span class="glitch" data-text=" questions">questions</span>?
+                </span>
+            </h1>
+            <p class="text-center mt-2">Don’t be shy and tell us your problem.</p>
+
+            <form action="">
+                <div class="form-group mx-auto">
+                    <div class="mb-4">
+                        <input class="form-control" type="text" required placeholder="Full Name">
+                    </div>
+                    <div class="mb-4">
+                        <input class="form-control" type="email" required placeholder="Email">
+                    </div>
+                    <div class="mb-4">
+                        <input class="form-control" type="tel" pattern="[+0-9]{11}" placeholder="Phone Number" maxlength="11">
+                    </div>
+                    <div class="mb-4">
+                        <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="text-center items">
+                    <button class="btn-buy py-2 text-center">
+                        <span data-hover="SEND" class="btn px-4 text-white">SEND</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="section-4 container pt-5 pb-4 mt-5 row no-gutters">
+        <div class="col-xl-7 d-flex justify-content-center mb-4 mb-sm-0">
+            <div id="cannabis">
+                <h1 class="font-weight-bold">Your Cannabis Health Report is completely personalized.
+                </h1>
+                <ul>
+                    <li class="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li class="my-4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat. </li>
+                    <li class="my-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur.</li>
+                    <li class="my-4">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum.
+                    </li>
+                    <li>
+                        <div class="items text-center text-md-left">
+                            <button class="button py-2">
+                                <span data-hover="BUTTON" class="btn px-4 text-white">BUTTON</span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xl-5 text-center">
+            <div class="row">
+                <div class="col">
+                    <div class="row mb-4 pictures">
+                        <a href="images/gallery/pic-1.jpg" data-toggle="lightbox" data-gallery="example-gallery"
+                            class="col-sm-12 col-lg-6">
+                            <img src="images/gallery/pic-1.jpg">
+                        </a>
+                        <a href="images/gallery/pic-1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-12 col-lg-6
+                            mt-sm-4 mt-lg-0">
+                            <img src="images/gallery/pic-1.jpg">
+                        </a>
+                    </div>
+                    <div class="row mb-4 pictures">
+                        <a href="images/gallery/pic-2.jpg" data-toggle="lightbox" data-gallery="example-gallery"
+                            class="col-sm-12 col-lg-6">
+                            <img src="images/gallery/pic-2.jpg">
+                        </a>
+                        <a href="images/gallery/pic-2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-12 col-lg-6
+                            mt-sm-4 mt-lg-0">
+                            <img src="images/gallery/pic-2.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-5 bg-white">
+        <div class="d-flex justify-content-center container flex-lg-row flex-column ">
+            <h1 class="font-weight-bold text-center mx-auto">
+                <span>
+                    <span class="glitch" data-text="Famous">Famous </span><br>
+                    <span class="glitch" data-text="News">News</span> From Our Lab
+                </span>
+            </h1>
+            <div class="d-flex justify-content-center align-items-end ar">
+                <svg id="left-arrow-sld-1" aria-hidden="true" focusable="false" data-prefix="fas"
+                    data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+                    height="27" width="27" class="svg-inline--fa fa-chevron-left fa-w-10">
+                    <path fill="currentColor"
+                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+                        class=""></path>
+                </svg>
+                <svg id="right-arrow-sld-1" aria-hidden="true" focusable="false" data-prefix="fas"
+                    data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+                    height="27" width="27" class="svg-inline--fa fa-chevron-right fa-w-10">
+                    <path fill="currentColor"
+                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                        class=""></path>
+                </svg>
+                <div class="lines d-flex align-items-end mr-4">
+                    <div class="line-scroll current mx-2"></div>
+                    <div class="line-scroll mx-2"></div>
+                    <div class="line-scroll mx-2"></div>
+                    <div class="line-scroll mx-2"></div>
+                    <div class="line-scroll mx-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+            <div class="blocks slider variable d-flex mt-0">
+                <div class="slider-width-item">
+                    <div class="block d-block text-center text-sm-left d-sm-flex p-2 ">
+                        <img class="block-img mx-auto" src="images/slider/doctor-2.jpeg" alt="">
+                        <div>
+                            <div class="block-title font-weight-bold pl-2 mt-3 mb-2 my-sm-0">Lorem ipsumdolor sit amet,
+                                consectetur adipiscing elit</div>
+
+                            <div class="text-size-12 pb-1 pl-2 text-justify">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt mollit anim id est laborum.</div>
+                            <div class="pl-2">
+                                <a href="#" class="learn-more font-weight-bold">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-width-item">
+                    <div class="block d-block text-center text-sm-left d-sm-flex p-2">
+                        <img class="block-img mx-auto" src="images/slider/doctor-1.jpeg" alt="">
+                        <div>
+                            <div class="block-title font-weight-bold pl-2 mt-3 mb-2 my-sm-0">Lorem ipsumdolor sit amet,
+                                consectetur adipiscing elit
+                            </div>
+                            <div class="text-size-12 pb-1 pl-2 text-justify">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt mollit anim id est laborum.</div>
+                            <div class="pl-2">
+                                <a href="#" class="learn-more font-weight-bold">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-width-item">
+                    <div class="block d-block text-center text-sm-left d-sm-flex p-2">
+                        <img class="block-img mx-auto" src="images/slider/doctor-2.jpeg" alt="">
+                        <div>
+                            <div class="block-title font-weight-bold pl-2 mt-3 mb-2 my-sm-0">Lorem ipsumdolor sit amet,
+                                consectetur adipiscing elit
+                            </div>
+                            <div class="text-size-12 pb-1 pl-2 text-justify">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt mollit anim id est laborum.</div>
+                            <div class="pl-2">
+                                <a href="#" class="learn-more font-weight-bold">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-width-item">
+                    <div class="block d-block text-center text-sm-left d-sm-flex p-2">
+                        <img class="block-title block-img mx-auto" src="images/slider/doctor-1.jpeg" alt="">
+                        <div>
+                            <div class="font-weight-bold pl-2 mt-3 mb-2 my-sm-0">Lorem ipsumdolor sit amet, consectetur
+                                adipiscing elit
+                            </div>
+                            <div class="text-size-12 pb-1 pl-2 text-justify">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt mollit anim id est laborum.</div>
+                            <div class="pl-2">
+                                <a href="#" class="learn-more font-weight-bold">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-width-item">
+                    <div class="block d-block text-center text-sm-left d-sm-flex p-2">
+                        <img class="block-img mx-auto" src="images/slider/doctor-2.jpeg" alt="">
+                        <div>
+                            <div class="block-title font-weight-bold pl-2 mt-3 mb-2 my-sm-0">Lorem ipsumdolor sit amet,
+                                consectetur adipiscing elit
+                            </div>
+                            <div class="text-size-12 pb-1 pl-2 text-justify">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt mollit anim id est laborum.</div>
+                            <div class="pl-2">
+                                <a href="#" class="learn-more font-weight-bold">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-6 mx-3 pb-100">
+        <h1 class="font-weight-bold text-center">
+            <span>
+                <span>Our Clients</span><br>
+                <span class="glitch" data-text=" Feedbacks"> Feedbacks</span>
+            </span>
+        </h1>
+        <div class="container bg-white mt-5 w-100 pr-sm-0 rounded">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-block text-center text-md-left d-md-flex">
+                            <img src="images/slider/doc.jpeg" class="pr-2 py-2" alt="">
+
+                            <div class="bg-white">
+                                <h5 class="font-weight-bold mt-2 ml-2">Gregor J. Martinas
+                                </h5>
+                                <div class="pb-2 ml-2">Tel Aviv</div>
+                                <div class="text-size-12 mx-3 ml-md-2 pb-3 text-justify">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla p exercitation ullamco laboris nisi ut aliquip ex ea comariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                    qui officia deserunt mollit anim id est laborum.m dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt mollit anim id est laborum. exercitation ullamco laboris
+                                    nisi ut aliquip ex ea com exercitation ullamco laboris nisi ut aliquip ex ea com
+                                    exercitation ullamco laboris nisi ut aliquip ex ea com exercitation ullamco
+                                    laboris nisi ut aliquip ex ea com
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block text-center text-md-left d-md-flex">
+                            <img src="images/slider/doc.jpeg" class="pr-2 py-2" alt="">
+
+                            <div class="bg-white">
+                                <h5 class="font-weight-bold mt-2 ml-2">Gregor J. Martinas
+                                </h5>
+                                <div class="pb-2 ml-2">Tel Aviv</div>
+                                <div class="text-size-12 mx-3 ml-md-2 pb-3 text-justify">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla p exercitation ullamco laboris nisi ut aliquip ex ea comariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                    qui officia deserunt mollit anim id est laborum.m dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt mollit anim id est laborum. exercitation ullamco laboris
+                                    nisi ut aliquip ex ea com exercitation ullamco laboris nisi ut aliquip ex ea com
+                                    exercitation ullamco laboris nisi ut aliquip ex ea com exercitation ullamco
+                                    laboris nisi ut aliquip ex ea com
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block text-center text-md-left d-md-flex">
+                            <img src="images/slider/doc.jpeg" class="pr-2 py-2" alt="">
+
+                            <div class="bg-white">
+                                <h5 class="font-weight-bold mt-2 ml-2">Gregor J. Martinas
+                                </h5>
+                                <div class="pb-2 ml-2">Tel Aviv</div>
+                                <div class="text-size-12 mx-3 ml-md-2 pb-3 text-justify">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla p exercitation ullamco laboris nisi ut aliquip ex ea comariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                    qui officia deserunt mollit anim id est laborum.m dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt mollit anim id est laborum. exercitation ullamco laboris
+                                    nisi ut aliquip ex ea com exercitation ullamco laboris nisi ut aliquip ex ea com
+                                    exercitation ullamco laboris nisi ut aliquip ex ea com exercitation ullamco
+                                    laboris nisi ut aliquip ex ea com
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows d-flex">
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <div class="ar left-arrow text-center">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                                id="leftArrowSld-2" class="mt-2" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512" height="25" width="25"
+                                class="svg-inline--fa fa-chevron-left fa-w-10">
+                                <path fill="currentColor"
+                                    d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+                                    class=""></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <div class="ar right-arrow text-center">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                                class="mt-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+                                height="25" id="rightArrowSld-2" width="25"
+                                class="svg-inline--fa fa-chevron-right fa-w-10">
+                                <path fill="currentColor"
+                                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                                    class=""></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-3 mt-sm-0">
+        <div class="container pb-5">
+            <div class="row no-gutters">
+                <div class="col-xl-3 text-xl-left text-center text-size-12">
+                    <a href="#">
+                        <img src="images/logo/logo-footer.png" class="mt-5" alt="">
+                    </a>
+                    <p class="text-white mt-4 mb-2">Copright 2020. All rights reserved.</p>
+                    <p class="text-white">Design and Developed by <a class="text-white ltu"
+                            href="http://www.ltu.co.il">LTU</a></p>
+                </div>
+                <div class="col-xl-2">
+                    <ul class="text-white">
+
+                        <li class="d-flex justify-content-center">
+                            <a href="#">
+                                <p>HOW IT WORKS</p>
+                            </a>
+                        </li>
+                        <li class="d-flex justify-content-center">
+                            <a href="#">
+                                <p>OUR SERVICES</p>
+                            </a>
+                        </li>
+                        <li class="d-flex justify-content-center">
+                            <a href="#">
+                                <p>ABOUT US</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-4">
+                    <ul class="text-white">
+                        <li class="d-flex justify-content-center">
+                            <a href="#">
+                                <p>REPORTS</p>
+                            </a>
+                        </li>
+                        <li class="d-flex justify-content-center">
+                            <a href="#">
+                                <p>CANNABIS DOSAGE</p>
+                            </a>
+                        </li>
+                        <li class="d-flex justify-content-center">
+                            <a href="#">
+                                <p>SHOP</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 d-flex d-flex justify-content-center justify-content-xl-end">
+                    <ul class="text-white">
+                        <li class="d-flex justify-content-end mr-2">
+                            <h4>
+                                <a href="#" class="mr-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="35"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" data-name="Layer 1"
+                                        viewBox="0 0 42 76.9">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: none;
+                                                }
+
+                                                .cls-2 {
+                                                    clip-path: url(#clip-path);
+                                                }
+                                            </style>
+                                            <clipPath id="clip-path">
+                                                <rect class="cls-1" width="42" height="76.9" />
+                                            </clipPath>
+                                        </defs>
+                                        <g class="cls-2">
+                                            <path
+                                                d="M40-.08,30-.1c-11.2,0-18.45,7.43-18.45,18.93v8.72h-10A1.57,1.57,0,0,0,0,29.12V41.77a1.56,1.56,0,0,0,1.57,1.56h10v31.9a1.57,1.57,0,0,0,1.57,1.57H26.24a1.57,1.57,0,0,0,1.57-1.57V43.33H39.53a1.56,1.56,0,0,0,1.57-1.56V29.12A1.61,1.61,0,0,0,40.65,28a1.57,1.57,0,0,0-1.11-.46H27.81V20.16c0-3.56.85-5.36,5.48-5.36H40a1.56,1.56,0,0,0,1.56-1.56V1.49A1.56,1.56,0,0,0,40-.08Zm0,0" />
+                                        </g>
+                                    </svg></a>
+                                <a href="tel:+972 456 7878">+972 456 7878</a>
+                            </h4>
+                        </li>
+                        <li class="d-flex justify-content-end mr-2">
+                            <h4>
+                                <a href="#" class="mr-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" data-name="Capa 1"
+                                        viewBox="0 0 512 416" width="34" height="27">
+                                        <path
+                                            d="M512,49.25a218.64,218.64,0,0,1-60.48,16.57,104.36,104.36,0,0,0,46.18-58,210,210,0,0,1-66.56,25.41A105,105,0,0,0,249.57,105,108,108,0,0,0,252,128.93C164.74,124.67,87.52,82.85,35.65,19.14A105,105,0,0,0,67.9,159.42,103.69,103.69,0,0,1,20.48,146.5v1.15a105.43,105.43,0,0,0,84.1,103.13,104.65,104.65,0,0,1-27.52,3.46,92.77,92.77,0,0,1-19.88-1.79c13.6,41.57,52.2,72.13,98.08,73.12A210.93,210.93,0,0,1,25.12,370.34,197.72,197.72,0,0,1,0,368.9,295.54,295.54,0,0,0,161,416c193.16,0,298.76-160,298.76-298.69,0-4.64-.16-9.12-.39-13.57A209.29,209.29,0,0,0,512,49.25Z" />
+                                    </svg>
+                                </a>
+                                <a href="tel:+972 456 7171">+972 456 7171</a>
+                            </h4>
+                        </li>
+                        <li class="d-flex justify-content-end">
+                            <h5>
+                                <a href="#" class="mr-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                        viewBox="0 0 384 240" width="41" height="26">
+                                        <path
+                                            d="M349.17,72h-35v34.83H279.34v35h34.84v34.84h35V141.82H384v-35H349.17Zm0,0" />
+                                        <path
+                                            d="M120,240c69.25,0,115.25-48.61,115.25-117.21a102.94,102.94,0,0,0-1.95-20H120v41.24h68.11c-2.79,17.53-20.63,51.73-68.11,51.73C79.1,195.79,45.7,161.9,45.7,120S79.09,44.19,120,44.19c23.41,0,39,10,47.8,18.5L200.4,31.43C179.43,11.79,152.41,0,120,0a120,120,0,0,0,0,240Zm0,0" />
+                                    </svg>
+                                </a>
+                                <a href="mailto:mail@email.co.il">mail@email.co.il</a>
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="1l" class="text-left accept pt-3 animated fadeInUp">
+            <div class="py-3 row no-gutters">
+                <div class="container d-md-flex d-block">
+                    <div class="col col-md-5 mx-auto">
+                        <h6 class="text-white">By accessing the ImpactGene site or mobile application (the “Sites”),
+                            you agree that we may collect information that identifies you as an individual</h6>
+                    </div>
+                    <div class="col col-md-6 d-flex align-items-center items">
+                        <button class="btn-accept mx-auto ml-sm-auto mr-sm-5 py-sm-1">
+                            <span data-hover="Accept" class="btn px-4 py-0 py-sm-1 text-white">Accept</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script src="slick/slick.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+
+        $(document).on('ready', function () {
+            $(".variable").slick({
+                dots: true,
+                arrows: false,
+                centerMode: true,
+                speed: 300,
+                infinite: true,
+                variableWidth: true
+            });
+        });
+
+        $(".menu").click(function () {
+            $(".bag-shop").toggle(); 
+        });
+    </script>
+</body>
+
+
+</html>
